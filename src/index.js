@@ -16,8 +16,8 @@ class MainPage extends React.Component {
   render() {
       return (
           <div>
-              <div className="container">
-                <NavBar />
+            <NavBar />
+              <div className="container">    
                   <div className="col-md-12">
                       <div>Main Page</div>
                       <Component />

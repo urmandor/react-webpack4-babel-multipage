@@ -4,7 +4,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 
 module.exports = {
-  // devtool: 'cheap-module-eval-source-map',
   entry: {
     index: './src/index.js',
     secondPage: './src/secondPage.js'
@@ -67,7 +66,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'secondPage.html',
       template: 'src/secondPage.html',
-      chunks: ['vendor-all', 'vendor-react', 'secondPage']
+      chunks: ['vendor-bootstrap', 'vendor-all', 'vendor-react', 'secondPage']
     }),
   ],
   devServer: {

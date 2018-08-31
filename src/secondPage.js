@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Component from './shared/component';
 import NavBar from './shared/navbar';
 
@@ -15,8 +15,8 @@ class SecondPage extends React.Component {
   render() {
       return (
           <div>
-              <div className="container">
-                <NavBar />
+            <NavBar />
+              <div className="container">    
                   <div className="col-md-12">
                       <div>Second Page</div>
                       <Component />
